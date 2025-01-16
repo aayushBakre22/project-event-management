@@ -10,7 +10,7 @@ connectDb()
     const server = http.createServer(app); // Create an HTTP server
     const io = new Server(server, {
       cors: {
-        origin: "http://localhost:5173", // Replace with your frontend's origin
+        origin: "https://iridescent-cocada-e63f4c.netlify.app/",
         methods: ["GET", "POST"],
       },
     });
