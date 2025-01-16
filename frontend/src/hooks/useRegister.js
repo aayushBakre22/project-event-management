@@ -17,7 +17,7 @@ export const useRegister = () => {
       data: "",
     });
     try {
-      const response = await axios.post("/api/v1/users/register", data, {
+      const response = await axios.post("https://project-event-management.onrender.com/api/v1/users/register", data, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
@@ -47,7 +47,7 @@ export const useRegister = () => {
       data: "",
     });
     try {
-      const response = await axios.post("/api/v1/users/login", data, {
+      const response = await axios.post("https://project-event-management.onrender.com/api/v1/users/login", data, {
         headers: {
           "Content-Type": "application/json",
         },

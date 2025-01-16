@@ -22,7 +22,7 @@ function App() {
       console.log("Access token error: ", error.response.data.error);
       try {
         const refreshToken = localStorage.getItem("refreshToken");
-        const response = await axios.get("/api/v1/users/currentUser", {
+        const response = await axios.get("https://project-event-management.onrender.com/api/v1/users/currentUser", {
           headers: {
             Authorization: `Bearer ${refreshToken}`,
           },

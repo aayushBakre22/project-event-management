@@ -4,7 +4,7 @@ import "./Event.css";
 import { io } from "socket.io-client";
 import moment from "moment";
 
-const socket = io("http://localhost:8000");
+const socket = io("https://project-event-management.onrender.com");
 
 const Event = ({ event, currentUser }) => {
   const [attendees, setAttendees] = useState(event.attendees);

@@ -61,7 +61,7 @@ const CreateEvent = () => {
     } else {
       try {
         const response = await axios.post(
-          "/api/v1/users/createEvent",
+          "https://project-event-management.onrender.com/api/v1/users/createEvent",
           formData,
           {
             headers: {

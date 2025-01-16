@@ -12,7 +12,7 @@ const Events = () => {
   const [date, setDate] = useState(new Date().toISOString().split("T")[0]);
   const getEvents = async () => {
     const response = await axios.post(
-      "/api/v1/users/getEvents",
+      "https://project-event-management.onrender.com/api/v1/users/getEvents",
       { categories, date },
       {
         headers: {
