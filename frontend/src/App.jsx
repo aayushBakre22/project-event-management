@@ -11,7 +11,7 @@ function App() {
   const getCurrentUser = async () => {
     try {
       const accessToken = sessionStorage.getItem("accessToken");
-      const response = await axios.get("/api/v1/users/currentUser", {
+      const response = await axios.get("https://project-event-management.onrender.com/api/v1/users/currentUser", {
         headers: {
           Authorization: `Bearer ${accessToken}`,
         },
