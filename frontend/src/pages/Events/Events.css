@@ -1,0 +1,124 @@
+.events-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* max-width: 50vw; */
+  width: 70%;
+  margin: 40px auto;
+  gap: 10px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.event {
+  width: 100%;
+  flex-grow: 1;
+  border: none;
+  text-align: left;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+  padding-bottom: 20px;
+
+  .details {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  h2,
+  h3,
+  p {
+    text-align: left;
+  }
+
+  img {
+    width: 100%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+
+  h3 {
+    font-size: 16px;
+    text-transform: capitalize;
+    font-style: italic;
+    color: rgb(112, 112, 112);
+    font-weight: 400;
+  }
+
+  button {
+    display: block;
+    width: 80%;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .attendees-count {
+    position: relative;
+    p {
+      position: absolute;
+      background-color: rgb(255, 255, 255);
+      border-radius: 20%;
+      padding: 20px;
+      bottom: 10px;
+      right: 10px;
+      
+    }
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .event {
+    width: 50vw;
+    flex-grow: 0;
+
+    h2,
+    h3,
+    p {
+      text-align: left;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .event {
+    /* max-width: calc(50% - 10px);
+    flex-grow: 1;
+    border: 1px solid black;
+    text-align: left; */
+
+    h2,
+    h3,
+    p {
+      text-align: left;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .event {
+    max-width: calc(50% - 10px);
+    flex-grow: 1;
+    text-align: left;
+
+    h2,
+    h3,
+    p {
+      text-align: left;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}
